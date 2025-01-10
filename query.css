@@ -1,0 +1,666 @@
+/* ***************************
+
+/* GENERAL STYLES */
+
+/* *************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
+}
+
+html {
+  font-size: 100%; /* Base font size */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ------------------------ */
+
+/* MEDIA QUERIES */
+
+/* ------------------------ */
+
+/* BELOW 1500px */
+@media (max-width: 93em) {
+  .container {
+      padding: 50px 50px;
+  }
+}
+
+/* BELOW 1300px */
+@media (max-width: 81em) {
+  .container {
+      padding: 30px 30px;
+  }
+
+  h1 {
+      font-size: 36px;
+  }
+
+  .header-text {
+      font-size: 16px;
+  }
+
+  .btn--big {
+      font-size: 16px;
+      padding: 14px; /* Adjusted padding */
+      width: auto; /* Set to auto for better responsiveness */
+  }
+
+  .hero-img img {
+      width: 90%;
+  }
+
+  h2 {
+      font-size: 34px;
+  }
+
+  header,section {
+  margin-bottom: 96px;
+}
+
+  .features-title,
+  .features-text,
+  .testimonial-text,
+  h3,
+  .chair-price {
+      font-size: 16px;
+  }
+
+  .btn--small {
+      font-size: 12px;
+      padding: 6px 10px; /* Adjust button size */
+      width: auto; /* Set to auto for better responsiveness */
+  }
+
+  .chair-box {
+      padding: 27px;
+  }
+
+  .footer {
+      font-size: 12px;
+  }
+}
+
+/* BELOW 1180px */
+@media (max-width: 73em) {
+  .container {
+      width: 90%;
+      padding: 20px 20px;
+  }
+
+  header,
+ section {
+  margin-bottom: 96px;
+}
+
+  h2 {
+      font-size: 32px;
+  }
+
+  .test-img{
+    width: 120%;
+  }
+}
+
+/* BELOW 1024px */
+@media (max-width: 64em) {
+  .container {
+      width: 85%;
+      padding: 20px 20px;
+  }
+
+  h1 {
+      font-size: 34px;
+  }
+    .test-img{
+    width: 120%;
+  }
+
+  .header-text {
+      font-size: 14px;
+  }
+
+  header,
+  section {
+  margin-bottom: 96px;
+}
+
+  .chair-price{
+    gap: 12px;
+  }
+
+  .chair-details-2{
+    margin-top: 39px;
+  }
+
+  .features-icon{
+    margin-left: 80px;
+  }
+
+  .testimonial-text{
+    text-align: left;
+  }
+
+  .testimonial-box h2{
+    text-align: left;
+  }
+
+.btn--big { 
+  font-size :14px; 
+  padding :10px; 
+}
+
+.btn--small { 
+  font-size :10 px; 
+  padding :8px; 
+  width :100%; /* Full width for mobile buttons */
+}
+
+.hero-img img { 
+  width :90%; 
+}
+
+h2, 
+.features-title, 
+.features-text, 
+h3, 
+.chair-price { 
+  text-align:center; /* Center align for better mobile view */
+}
+
+.testimonial-section{
+  padding: 15px;
+}
+}
+
+/* BELOW 940px */
+@media (max-width: 61em) { /* Updated breakpoint for better structure */
+html{
+  font-size :80%; /* Adjust base font size */
+}
+
+header,
+section {
+  margin-bottom: 96px;
+}
+
+.container { 
+  width :95%; /* Full width for small screens */
+  padding :10 px; /* Reduced padding */
+}
+
+.testimonial-section{
+  padding: 15px;
+}
+
+h1 { 
+  font-size :28 px; /* Smaller heading size */
+  text-align:left; /* Center align for better mobile view */
+}
+
+.features-icon{
+  margin-left: 10px;
+}
+
+h2, 
+h3, 
+.features-title, 
+.features-text, 
+.testimonial-text, 
+.chair-price { 
+  font-size :16 px; /* Consistent text size for readability */
+    text-align:left; /* Center align for better mobile view */
+}
+
+.chair-details-2{
+  margin-top: 10px;
+}
+
+ .btn--big, 
+ .btn--small { 
+     padding :10px; /* Adjusted button size */
+     text-align:center; /* Center align text in buttons */
+ }
+
+img { 
+    max-width :120%; /* Ensure images are responsive */
+    height:auto; /* Maintain aspect ratio */
+    border-radius :12px; /* Rounded corners for images */
+}
+
+.footer { 
+    font-size :10 px; /* Smaller footer text size */
+    text-align:center; /* Center align footer text */
+    margin-top :20px; /* Margin for spacing above footer */
+}
+}
+
+/* BELOW 895px */
+
+@media (max-width: 55em){
+  .btn--small-3{
+    width: 109.25px;
+    height: 26.5px;
+  }
+
+  .btn--small{
+    font-size: 10px;
+  }
+
+  header,
+  section {
+  margin-bottom: 96px;
+}
+
+  .chair-box {
+    padding: 10px;
+}
+
+  .testimonial-section{
+    padding: 12px;
+  }
+
+  .testimonial-text{
+    font-size: 14px;
+  }
+
+  .btn--small-3 {
+    width: 109.25px;
+    height: 32.5px;
+  }
+}
+
+/* BELOW 792px */
+
+@media (max-width: 49em){
+
+  .grid-3-cols{
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+  }
+
+  .chair{
+    width: 50%;
+    margin-left: 150px;
+    padding-bottom: 20px;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+
+  h3, .chair-details, .chair-price{
+    padding-left: 20px;
+  }
+
+  h2{
+    font-size: 26px;
+  }
+
+  h3{
+    margin-top: 10px;
+  }
+
+  .header-text{
+    font-size: 14px;
+  }
+
+  .test-img{
+    margin-top: auto;
+  }
+
+  .chair-details{
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+
+    .btn--big{
+      margin-top: 0px;
+      width: 50%;
+      height: 50%;
+    }
+
+    .btn--small{
+      width: 50%;
+      height: 100%;
+      margin-right: 20px;
+      font-size: 10px;
+    }
+
+    .testimonial-text{
+      font-size: 12px;
+      text-wrap: wrap;
+      text-align: left;
+    }
+
+    .testimonial-box{
+      padding: 10px 10px 10px 10px;
+    }
+
+    .test-img{
+      width: 50%;
+      height: 50%;
+    }
+
+    .testimonial-section{
+      height: 100%;
+    }
+
+    .grid-3-cols:first-child{
+      display: flex;
+      gap: 10px;
+  }
+
+      .btn--big{
+        padding: 10px;
+        /* margin-left: 230px; */
+      }
+
+      .features-icon{
+        width: 50px;
+        height: 30px;
+        margin-left: -10px;
+      }
+
+      header,
+      section {
+        margin-bottom: 96px;
+      }
+    }
+
+    /* BELOW 738px */
+
+    @media (max-width: 46em){
+      .test-img{
+        margin: 10px auto;
+      }
+
+      .testimonial-section{
+        padding: 10px;
+      }
+
+      .btn--big{
+        width: 50%;
+      }
+
+      .hero-img{
+        width: 50%;
+        justify-self: center;
+      }
+
+      header{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+      }
+
+      header,
+      section {
+        margin-bottom: 96px;
+      }
+
+      .btn--big{
+        margin-bottom: 10px;
+        width: 20%;
+        font-size: 13px;
+      }
+
+      h1, h2, .header-text{
+        text-align: center;
+      }
+
+      .features-icon{
+        width: 50px;
+        height: 30px;
+        margin-left: -10px;
+      }
+
+      .testimonial-text{
+        margin-top: -30px;
+      }
+
+      .grid-3-cols{
+        row-gap: 35px;
+      }
+
+      h1{
+        font-size: 26px;
+      }
+
+      h2{
+        font-size: 24px;
+      }
+
+      .header-text{
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-bottom: 35px;
+      }
+
+      .btn--big{
+        margin-left: 260px;
+      }
+    }
+
+      /* BELOW 688px */
+
+      @media (max-width: 43em){
+        .btn--big{
+          margin-left: 40%;
+          font-size: 12px;
+        }
+
+        .testimonial-box h2{
+          font-size: 20px;
+        }
+
+        header,
+      section {
+        margin-bottom: 96px;
+      }
+        
+        }
+
+        /* BELOW 600px */
+
+        @media (max-width: 37em){
+          .btn--big{
+            width: 100%;
+            height: 10%;
+            font-size: 2px;
+          }
+
+          .testimonial-box h2{
+            font-size: 18px;
+          }
+
+          .testimonial-author{
+            font-size: 10px;
+            margin-top: -10px;
+          }
+
+          header,
+      section {
+        margin-bottom: 96px;
+      }
+
+          .test-img{
+            height: 200px;
+          }
+        }
+
+        /* BELOW 593px */
+
+        @media (max-width: 37.5em){
+          .container{
+            width: 100%;
+          }
+
+         .btn--big{
+          width: 20%;
+          font-size: 12px;
+         }
+
+         h1{
+          font-size: 22px;
+         }
+
+         header,
+        section {
+            margin-bottom: 70px;
+        }
+
+         h2{
+          font-size: 20px;
+         }
+
+         h3{
+          font-size: 16px;
+         }
+
+         .header-text{
+          font-size: 14px;
+         }
+
+         .features-text{
+          font-size: 14px;
+         }
+
+         .features-title{
+          font-size: 16px;
+         }
+
+         .chair-details{
+          font-size: 14px;
+         }
+
+         .h2-2{
+          margin-left: 30px;
+         }
+         
+        }
+
+        /* BELOW 550px */
+        
+        @media (max-width: 34.5em){
+          .btn--big{
+            font-size: 12px;
+            width: 30%;
+            margin-left: 35%;
+          }
+
+          header,
+          section {
+            margin-bottom: 70px;
+           }
+
+          h1{
+            font-size: 22px;
+           }
+  
+           h2{
+            font-size: 20px;
+           }
+
+           h2-2{
+            margin-left: 19px;
+           }
+
+           .last-grid{
+            margin: -20% -30%;
+           }
+
+           .container{
+            padding: 10px 48px 9px 42px;
+           }
+
+           .features-text{
+            font-size: 12px;
+           }
+  
+           .features-title{
+            font-size: 14px;
+           }
+
+           .testimonial-box h2{
+            font-size: 16px;
+           }
+
+           .testimonial-text{
+            font-size: 10px;
+           }
+        }
+
+          /* BELOW 520px */
+
+          @media (max-width: 32.5em){
+            .last-grid{
+              margin: 10% -24%;
+             }
+
+             .testimonial-box h2{
+              font-size: 14px;
+             }
+
+            .testimonial-text{
+                font-size: 8px;
+               }
+
+            .testimonial-author{
+              font-size: 8px;
+             }
+
+             .btn--big{
+              width: 32%;
+             }
+
+             .container{
+              max-width: 67vh;
+              padding: 6px 20px 11px 20px;
+             }
+          }
+
+
+        /* BELOW 450px */
+
+        @media (max-width: 25em){
+          header,
+          section {
+            margin-bottom: 50px;
+        }
+
+        .last-grid{
+          margin: 10% -24%;
+         }
+
+         .testimonial-text{
+          font-size: 2px;
+         }
+
+         .testimonial-box h2{
+            margin-bottom: -10px;
+            font-size: 4px;
+         }
+
+         .btn--big{
+          width: 10%;
+          height: 10%;
+         }
+
+         .container{
+          max-width: 84vh;
+          padding: 6px 66px 11px 73px;
+         }
+
+        }
